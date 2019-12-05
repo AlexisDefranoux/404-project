@@ -4,4 +4,5 @@ export interface Obstacles {
 	width: number;
 	height: number;
 	update: Function;
+	redirect: string;
 }

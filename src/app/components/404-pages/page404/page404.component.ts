@@ -19,6 +19,7 @@ export class Page404Component implements AfterViewInit {
   }
 
   public ngAfterViewInit() {
+    console.log("view init");
     const canvasEl: HTMLCanvasElement = this.canvas.nativeElement;
     this.appService.createPlayGround(canvasEl);
     this.subscription = this.appService.getImageLoadEmitter()

@@ -5,4 +5,5 @@ export interface SingleObstacles {
 	sHeight: number;
 	width: number;
 	height: number;
+	redirect: string;
 }

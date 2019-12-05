@@ -4,6 +4,7 @@ import * as CONFIG from './../config/config';
 import {Obstacles} from '../interfaces/obstacles';
 import {SingleObstacles} from '../interfaces/single-obstacle';
 import {PlayerPosition} from '../interfaces/player-position';
+import { Router } from '@angular/router';
 
 @Injectable()
 export class GameService {
@@ -15,6 +16,8 @@ export class GameService {
     x: CONFIG.playGroundWidth / 2 - CONFIG.playerCar.width,
     y: CONFIG.playGroundHeight - (CONFIG.playerCar.height + CONFIG.playerCar.height / 2),
   };
+
+  constructor(private _router: Router) {}
 
   context: CanvasRenderingContext2D;
   obstacles: Array<Obstacles> = [];
@@ -42,9 +45,10 @@ export class GameService {
     this.gameLoop = setInterval(() => {
       this.suffleProperties();
       this.cleanGround();
-      // this.createObstacles();
+      this.createObstacles();
       this.moveObstacles();
       this.createPlayer();
+      console.log("loop");
     }, 10);
   }
 
@@ -78,6 +82,7 @@ export class GameService {
         this.y = Math.floor(Math.random() * -15) + 0,
         this.width = randomVehicle.width;
       this.height = randomVehicle.height;
+      this.redirect = randomVehicle.redirect;
       this.update = () => {
         context.drawImage(
           image,
@@ -161,8 +166,10 @@ export class GameService {
     )
     ) {
       clearInterval(this.gameLoop);
-      alert('Game Over');
-      window.location.reload();
+
+      this._router.navigate(['home']).then(() => {
+        window.location.reload();
+      });;
     }
   }
 
