@@ -15,6 +15,7 @@ import { SenpaiComponent } from './components/escape-game/senpai/senpai.componen
 import { Page404Component } from './components/404-pages/page404/page404.component';
 import {AppService} from './services/app.service';
 import {GameService} from './services/game.service';
+import {MatIconModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import {GameService} from './services/game.service';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatIconModule,
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,

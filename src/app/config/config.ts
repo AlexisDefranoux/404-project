@@ -1,6 +1,6 @@
 import {SingleObstacles} from '../interfaces/single-obstacle';
 
-export const playGroundHeight = window.innerHeight;
+export const playGroundHeight = window.innerHeight - 250;
 export const playGroundWidth = 500;
 export const frameNumber = 0;
 export const spritePath = '../assets/img/sprites.png';
