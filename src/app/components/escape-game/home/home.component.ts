@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ChatbotComponent} from '../chatbot/chatbot.component'
 
 @Component({
   selector: 'app-home',
