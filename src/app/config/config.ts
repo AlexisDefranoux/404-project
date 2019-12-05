@@ -30,5 +30,13 @@ export const vehicles: SingleObstacles[] = [
     width: 40,
     height: 90,
     redirect: "test2"
-  }
+  }, {
+		sX: 161,  // Yellow car
+		sY: 265,
+		sWidth: 64,
+		sHeight: 135,
+		width: 40,
+		height: 90,
+    redirect: "test3"
+	}
 ];
