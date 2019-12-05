@@ -48,7 +48,6 @@ export class GameService {
       this.createObstacles();
       this.moveObstacles();
       this.createPlayer();
-      console.log("loop");
     }, 10);
   }
 
@@ -167,9 +166,7 @@ export class GameService {
     ) {
       clearInterval(this.gameLoop);
 
-      this._router.navigate(['home']).then(() => {
-        window.location.reload();
-      });;
+      window.location.href = obstacle.redirect;
     }
   }
 
