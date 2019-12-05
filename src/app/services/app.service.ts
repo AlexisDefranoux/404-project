@@ -30,16 +30,6 @@ export class AppService {
         this.gameService.moveLeft = false;
         this.gameService.moveUP = false;
         this.gameService.moveDown = false;
-      } else if (event.keyCode === 38) {
-        this.gameService.moveUP = true;
-        this.gameService.moveLeft = false;
-        this.gameService.moveRight = false;
-        this.gameService.moveDown = false;
-      } else if (event.keyCode === 40) {
-        this.gameService.moveDown = true;
-        this.gameService.moveLeft = false;
-        this.gameService.moveRight = false;
-        this.gameService.moveUP = false;
       }
     } else if (type === 'keyup') {
       this.gameService.moveDown = false;
