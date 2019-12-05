@@ -97,7 +97,7 @@ export class GameService {
 
   moveObstacles(): void {
     this.obstacles.forEach((element: Obstacles, index: number) => {
-      element.y += 3;
+      element.y += 2;
       element.update();
       this.detectCrash(element);
       if (element.y > this.height) {

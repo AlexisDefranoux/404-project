@@ -1,20 +1,10 @@
-.loader{
-  background: #000000ab;
-  position: absolute;
-  text-align: center;
-  color: #fff;
-}
-.message {
-  text-align: center;
-  margin-top: 20%;
-}
-.loader i {
-  font-size: 50px;
-}
+
 .play-ground{
   display: grid;
   margin: auto;
   background-color: #ddd;
+  width: 500px;
+  height: max-content;
 }
 //
 //.grass{
