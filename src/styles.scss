@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+$theme-colors: (
+  "primary": #2980b9,
+  "success": #27ae60,
+  "danger": #c0392b,
+  "warning": #e67e22,
+  "dark": #1e272e,
+  "secondary": #7f8c8d
+);
+
+@import "~bootstrap/scss/bootstrap";
+@import "assets/angular-material-theme.scss";
+
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.container-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  background-color: #ffffff;
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+* {
+  line-height: initial;
+
+  &:active,
+  :focus {
+    outline: none;
+  }
+
+  a:hover {
+    color: initial;
+    text-decoration: initial;
+  }
+}
