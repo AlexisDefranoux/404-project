@@ -10,6 +10,7 @@ $theme-colors: (
 
 @import "~bootstrap/scss/bootstrap";
 @import "assets/angular-material-theme.scss";
+@import 'assets/animate.css';
 
 html, body{
   margin: 0;
