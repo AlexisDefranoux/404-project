@@ -1,0 +1,12 @@
+<p>enigme works!</p>
+
+<form (ngSubmit)="onSubmit()" class="example-form">
+  <mat-form-field class="example-full-width">
+    <label>
+      <input [formControl]="indice" matInput placeholder="reponse"/>
+    </label>
+  </mat-form-field>
+</form>
+
+<button (click)="onClick()">Demander un indice</button>
+<p id="indicep"></p>
