@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/escape-game/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { Page404Component } from './components/404-pages/page404/page404.component';
+import {AppService} from './services/app.service';
+import {GameService} from './services/game.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { Page404Component } from './components/404-pages/page404/page404.compone
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [AppService, GameService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,37 @@
+.instructions{
+  position: absolute;
+  margin: 0px;
+  top: 0px;
+  width: 154px;
+  padding: 5px;
+  color: white;
+  background: #000;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.loader{
+  width: 100%;
+  height: 100%;
+  background: #000000ab;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+}
+
+.message {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.loader i {
+  font-size: 50px;
+}
+
+
+.play-ground{
+  display: grid;
+  margin: auto;
+  background-color: #ddd;
+}
+
