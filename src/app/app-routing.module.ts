@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {Test1Component} from './components/404-pages/test1/test1.component';
 import {HomeComponent} from './components/escape-game/home/home.component';
-
+import {Page404Component} from './components/404-pages/page404/page404.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: '**', component: Test1Component }
+  { path: '**', redirectTo: '/page404', pathMatch: 'full' },
+  { path: 'page404', component: Page404Component }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
