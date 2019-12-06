@@ -21,7 +21,7 @@ export const vehicles: SingleObstacles[] = [
     sHeight: 135,
     width: 40,
     height: 90,
-    redirect: "test"
+    redirect: "https://www.etudiant.gouv.fr/cid96662/la-sante-sur-les-campus.html"
   }, {
     sX: 100,  // Black car
     sY: 269,
@@ -29,7 +29,7 @@ export const vehicles: SingleObstacles[] = [
     sHeight: 135,
     width: 40,
     height: 90,
-    redirect: "test2"
+    redirect: "https://wwwd.caf.fr/"
   }, {
 		sX: 161,  // Yellow car
 		sY: 265,
@@ -37,6 +37,6 @@ export const vehicles: SingleObstacles[] = [
 		sHeight: 135,
 		width: 40,
 		height: 90,
-    redirect: "test3"
+    redirect: "https://www.education.gouv.fr/"
 	}
 ];
