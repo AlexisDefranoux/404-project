@@ -1,4 +1,39 @@
-<p>home works!</p>
-<app-chatbot></app-chatbot>
-<app-bibliotheque></app-bibliotheque>
-<app-senpai></app-senpai>
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Chatbot
+      </mat-panel-title>
+      <mat-panel-description>
+        Posez des questions
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <app-chatbot></app-chatbot>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Bibliothèque
+      </mat-panel-title>
+      <mat-panel-description>
+        Naviguez parmis nos diverses informations
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <app-bibliotheque></app-bibliotheque>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel class="mb-5">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Chat avec les experts
+      </mat-panel-title>
+      <mat-panel-description>
+        Parlez avec vos senpai
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <app-senpai></app-senpai>
+  </mat-expansion-panel>
+</mat-accordion>
+

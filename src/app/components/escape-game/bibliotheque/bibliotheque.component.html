@@ -1,3 +1,10 @@
-<p>bibliotheque works!</p>
-<a href="https://wikipedia.com">Vas sur wikipedia</a><br/>
-<a href="https://www.etudiant.gouv.fr/">CROUS</a>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <label>
+      <input [formControl]="truc" matInput placeholder="filtre"/>
+    </label>
+  </mat-form-field>
+</form>
+<mat-nav-list>
+  <a mat-list-item *ngFor="let c of search(truc.value)"> {{ c }} </a>
+</mat-nav-list>

@@ -7,6 +7,7 @@ import {ChatbotComponent} from '../chatbot/chatbot.component'
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  panelOpenState = false;
 
   constructor() { }
 

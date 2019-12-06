@@ -9,17 +9,21 @@ import {FormControl} from '@angular/forms';
 export class ChatbotComponent implements OnInit {
 
   public message = new FormControl('');
+  public chatboxanswer;
 
   constructor() { }
 
   ngOnInit() {
+    this.chatboxanswer = document.getElementById('chatboxanswer');
   }
 
   onSubmit() {
-    if (/indice/.test(this.message.value)) {
-      console.log('l\'indice est');
-    } else if (/aide/.test(this.message.value)) {
-      console.log('aide');
+    if (/merci/i.test(this.message.value)) {
+      this.chatboxanswer.innerText = 'initials';
+    } else if (/zen/i.test(this.message.value)) {
+      this.chatboxanswer.innerText = 'nez=753';
+    } else {
+      this.chatboxanswer.innerText = 'Le chatbox n\'est là que pour la chasse au trésor, désolé...';
     }
   }
 

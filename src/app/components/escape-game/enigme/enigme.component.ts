@@ -10,37 +10,49 @@ export class EnigmeComponent implements OnInit {
 
   public indice = new FormControl('');
   private indicep;
-  private numEnigme = 0;
+  private grosindice;
+  public logoUrl = './././assets/blanc.PNG';
 
   constructor() {
   }
 
   ngOnInit() {
     this.indicep = document.getElementById('indicep');
+    this.indicep.innerText = 'N\'hésitez pas à parler avec vos senpai';
+    this.grosindice = document.getElementById('grosindice');
   }
 
   onSubmit() {
-    if (this.numEnigme === 0 &&
-      this.indice.value === '5') {
-      this.numEnigme = 1;
-      this.indicep.innerText = '';
+    if (this.indice.value.toString().toLowerCase() === 'merci') {
+      this.indicep.innerText = 'Pensez à remercier LES fonctionnalités';
+      this.grosindice.innerText = '';
     } else
-    if (this.numEnigme === 1 &&
-      this.indice.value === '2') {
-      this.numEnigme = 2;
-      this.indicep.innerText = '';
+    if (this.indice.value.toString().toLowerCase() === 'sept' || this.indice.value === '7') {
+      this.indicep.innerText = 'Rien ne sert de filtrer, il faut partir à point';
+      this.grosindice.innerText = '';
+    } else
+    if (this.indice.value.toString().toLowerCase() === 'zen') {
+      this.indicep.innerText = 'Et qu\'en pense le chatbox ?';
+      this.grosindice.innerText = '';
+    } else
+    if (this.indice.value === '357') {
+      this.indicep.innerText = 'bravo';
+      this.logoUrl = './././assets/csgroup.png';
     }
   }
 
   onClick() {
-    if (this.numEnigme === 0) {
-      this.indicep.innerText = 'indice 1';
+    if (this.indicep.innerText === 'N\'hésitez pas à parler avec vos senpai') {
+      this.grosindice.innerText = 'Prenez en compte les identités';
     } else
-    if (this.numEnigme === 1) {
-      this.indicep.innerText = 'indice 2';
+    if (this.indicep.innerText === 'Pensez à remercier LES fonctionnalités') {
+      this.grosindice.innerText = 'Interroger le chatbot vous donne les pistes suffisantes lors de la recherche dans la bibliothèque';
     } else
-    if (this.numEnigme === 2) {
-      this.indicep.innerText = 'indice 3';
+    if (this.indicep.innerText === 'Rien ne sert de filtrer, il faut partir à point') {
+      this.grosindice.innerText = 'Un filtre vide est plus efficace lorsque l\'on souhaite se balader dans la bibliothèque';
+    } else
+    if (this.indicep.innerText === 'Et qu\'en pense le chatbox ?') {
+      this.grosindice.innerText = 'La réponse pourrait vous retourner la tête';
     }
   }
 
