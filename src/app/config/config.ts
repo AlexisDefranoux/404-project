@@ -3,7 +3,7 @@ import {SingleObstacles} from '../interfaces/single-obstacle';
 export const playGroundHeight = window.innerHeight - 250;
 export const playGroundWidth = 700;
 export const frameNumber = 0;
-export const spritePath = '../assets/img/sprites.png';
+export const spritePath = '../../assets/img/sprites.png';
 export const playerCarSpeed = 5;
 export const playerCar = {
   sX: 410,  // Black Viper car
